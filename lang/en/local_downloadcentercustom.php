@@ -150,6 +150,16 @@ $string['lesson_grade_method'] = 'Grading method';
 $string['lesson_grade_highest'] = 'Highest grade';
 $string['lesson_grade_average'] = 'Average grade';
 
+// Locallib_workshop strings
+$string['workshop_results'] = 'Results - ';
+$string['workshop_workshop_results'] = 'Workshop results: ';
+$string['workshop_student'] = 'Student';
+$string['workshop_title'] = 'Submission title';
+$string['workshop_submitted'] = 'Submission date';
+$string['workshop_grade'] = 'Grade';
+$string['workshop_content'] = 'Submission content';
+$string['workshop_feedback'] = 'Feedback';
+
 // Locallib_assign strings
 $string['string_unknown'] = 'Unknown';
 $string['string_feedback_url'] = 'Feedback';
@@ -163,3 +173,16 @@ $string['string_no_feedback'] = '(no feedback)';
 $string['string_no_comment'] = '(no comment)';
 $string['string_max'] = '(max {$a})';
 $string['string_label'] = 'Label';
+
+//locallib_workshop
+$string['workshop_grading_method'] = 'Grading method';
+$string['workshop_number_assessments'] = 'Number of assessments';
+$string['workshop_final_grade'] = 'Final grade';
+$string['workshop_assessments_received'] = 'Assessments received';
+$string['workshop_reviewer'] = 'Reviewer';
+$string['workshop_assessment_grade'] = 'Assessment grade';
+$string['workshop_feedback'] = 'Feedback';
+$string['workshop_accumulatuve'] = 'Accumulative';
+$string['workshop_rubric'] = 'Rubric';
+$string['workshop_numerrors'] = 'Number of errors';
+$string['workshop_comments'] = 'Comments';

@@ -229,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
             toggleByModname("h5pactivity", checked);
             toggleByModname("forum", checked);
             toggleByModname("lesson", checked);
+            toggleByModname("workshop", checked);
         });
     }
     if (qtries) {
@@ -272,7 +273,7 @@ JS
                 if ($r->modname === 'quiz') {
                     return $candownloadquiz;
                 }
-                if (in_array($r->modname, ['assign', 'publication', 'h5pactivity', 'forum', 'lesson'])) {
+                if (in_array($r->modname, ['assign', 'publication', 'h5pactivity', 'forum', 'lesson', 'workshop'])) {
                     return $candownloadassign;
                 }
                 return $candownloadmaterials;
@@ -328,7 +329,7 @@ JS
                     if (!$candownloadquiz) {
                         continue;
                     }
-                } else if (in_array($res->modname, ['assign', 'publication', 'h5pactivity', 'forum', 'lesson'])) {
+                } else if (in_array($res->modname, ['assign', 'publication', 'h5pactivity', 'forum', 'lesson', 'workshop'])) {
                     if (!$candownloadassign) {
                         continue;
                     }
@@ -508,7 +509,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var pages = document.getElementById('id_includepages');
         if (pages) { pages.checked = !!checkedMods.page; }
         var tasks = document.getElementById('id_onlytasks');
-        if (tasks) { tasks.checked = !!checkedMods.assign; }
+        if (tasks) { tasks.checked = !!(checkedMods.assign || checkedMods.workshop); }
         var quiztries = document.getElementById('id_quiztries');
         if (quiztries) { quiztries.checked = !!checkedMods.quiz; }
         // Sincronizar checkboxes de seccion.

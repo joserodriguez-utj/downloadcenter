@@ -151,6 +151,16 @@ $string['lesson_grade_method'] = 'Método de calificación';
 $string['lesson_grade_highest'] = 'Calificación más alta';
 $string['lesson_grade_average'] = 'Promedio de calificaciones';
 
+// Locallib_workshop strings
+$string['workshop_results'] = 'Resultados - ';
+$string['workshop_workshop_results'] = 'Resultados del taller: ';
+$string['workshop_student'] = 'Estudiante';
+$string['workshop_title'] = 'Título de la entrega';
+$string['workshop_submitted'] = 'Fecha de entrega';
+$string['workshop_grade'] = 'Calificación';
+$string['workshop_content'] = 'Contenido de la entrega';
+$string['workshop_feedback'] = 'Retroalimentación';
+
 //Locallib_assign strings
 $string['string_unknown'] = 'Desconocido';
 $string['string_feedback_url'] = 'Retroalimentación';
@@ -164,3 +174,16 @@ $string['string_no_feedback'] = '(sin retroalimentación)';
 $string['string_no_comment'] = '(sin observación)';
 $string['string_max'] = '(máx {$a})';
 $string['string_label'] = 'Etiqueta';
+
+//locallib_workshop
+$string['workshop_grading_method'] = 'Método de calificación';
+$string['workshop_number_assessments'] = 'Número de evaluaciones';
+$string['workshop_final_grade'] = 'Calificación final';
+$string['workshop_assessments_received'] = 'Evaluaciones recibidas';
+$string['workshop_reviewer'] = 'Revisor';
+$string['workshop_assessment_grade'] = 'Calificación de la evaluación';
+$string['workshop_feedback'] = 'Retroalimentación';
+$string['workshop_accumulatuve'] = 'Acumulativa';
+$string['workshop_rubric'] = 'Rúbrica';
+$string['workshop_numerrors'] = 'Númer de errores';
+$string['workshop_comments'] = 'Comentarios';
