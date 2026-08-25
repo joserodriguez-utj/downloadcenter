@@ -187,3 +187,4 @@ $string['workshop_accumulatuve'] = 'Acumulativa';
 $string['workshop_rubric'] = 'Rúbrica';
 $string['workshop_numerrors'] = 'Númer de errores';
 $string['workshop_comments'] = 'Comentarios';
+$string['workshop_assessment_date'] = 'Fecha de evaluación';

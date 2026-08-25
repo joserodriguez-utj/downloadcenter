@@ -186,3 +186,4 @@ $string['workshop_accumulatuve'] = 'Accumulative';
 $string['workshop_rubric'] = 'Rubric';
 $string['workshop_numerrors'] = 'Number of errors';
 $string['workshop_comments'] = 'Comments';
+$string['workshop_assessment_date'] = 'Assessment date';
