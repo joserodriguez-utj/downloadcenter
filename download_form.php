@@ -230,6 +230,7 @@ document.addEventListener("DOMContentLoaded", function() {
             toggleByModname("forum", checked);
             toggleByModname("lesson", checked);
             toggleByModname("workshop", checked);
+            toggleByModname("data", checked);
         });
     }
     if (qtries) {
@@ -273,7 +274,7 @@ JS
                 if ($r->modname === 'quiz') {
                     return $candownloadquiz;
                 }
-                if (in_array($r->modname, ['assign', 'publication', 'h5pactivity', 'forum', 'lesson', 'workshop'])) {
+                if (in_array($r->modname, ['assign', 'publication', 'h5pactivity', 'forum', 'lesson', 'workshop', 'data'])) {
                     return $candownloadassign;
                 }
                 return $candownloadmaterials;
@@ -329,7 +330,7 @@ JS
                     if (!$candownloadquiz) {
                         continue;
                     }
-                } else if (in_array($res->modname, ['assign', 'publication', 'h5pactivity', 'forum', 'lesson', 'workshop'])) {
+                } else if (in_array($res->modname, ['assign', 'publication', 'h5pactivity', 'forum', 'lesson', 'workshop', 'data'])) {
                     if (!$candownloadassign) {
                         continue;
                     }
@@ -509,7 +510,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var pages = document.getElementById('id_includepages');
         if (pages) { pages.checked = !!checkedMods.page; }
         var tasks = document.getElementById('id_onlytasks');
-        if (tasks) { tasks.checked = !!(checkedMods.assign || checkedMods.workshop); }
+        if (tasks) { tasks.checked = !!(checkedMods.assign || checkedMods.workshop || checkedMods.data); }
         var quiztries = document.getElementById('id_quiztries');
         if (quiztries) { quiztries.checked = !!checkedMods.quiz; }
         // Sincronizar checkboxes de seccion.

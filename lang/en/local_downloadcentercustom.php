@@ -186,3 +186,22 @@ $string['workshop_accumulatuve'] = 'Accumulative';
 $string['workshop_rubric'] = 'Rubric';
 $string['workshop_numerrors'] = 'Number of errors';
 $string['workshop_comments'] = 'Comments';
+
+// Database (data) strings.
+$string['data_results'] = 'Database results - ';
+$string['data_data_results'] = 'Database results: ';
+$string['data_student'] = 'Student';
+$string['data_record_title'] = 'Record title';
+$string['data_submitted'] = 'Submission date';
+$string['data_grade'] = 'Grade';
+$string['data_record_details'] = 'Record details';
+$string['data_empty'] = 'Empty';
+$string['data_yes'] = 'Yes';
+$string['data_no'] = 'No';
+$string['data_untitled'] = 'Untitled';
+$string['data_download_file'] = 'Download file';
+$string['data_num_records'] = 'Number of records';
+$string['data_grading_method'] = 'Grading method';
+$string['data_final_grade'] = 'Final grade';
+$string['data_no_grade'] = 'No grade';
+$string['data_rated'] = 'Record rating';
