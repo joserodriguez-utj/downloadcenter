@@ -238,9 +238,11 @@ trait local_downloadcentercustom_workshop_trait {
             foreach ($assessments as $assessment) {
                 $reviewer = $DB->get_record('user', ['id' => $assessment->reviewerid]);
                 $reviewername = $reviewer ? fullname($reviewer) : get_string('string_unknown', 'local_downloadcentercustom');
-                
+
                 $h .= '<div style="border:1px solid #0d6efd;border-radius:4px;padding:8px;margin-bottom:10px;">';
                 $h .= '<div><b>' . get_string('workshop_reviewer', 'local_downloadcentercustom') . '</b> ' . s($reviewername) . '</div>';
+                // === NUEVO: Mostrar fecha de la evaluación ===
+                $h .= '<div><b>' . get_string('workshop_assessment_date', 'local_downloadcentercustom') . '</b> ' . userdate($assessment->timecreated) . '</div>';
                 $h .= '<div><b>' . get_string('workshop_assessment_grade', 'local_downloadcentercustom') . '</b> ' . ($assessment->grade !== null ? round($assessment->grade, 2) : '-') . '</div>';
                 if (!empty($assessment->feedbackauthor)) {
                     $h .= '<div><b>' . get_string('workshop_feedback', 'local_downloadcentercustom') . '</b> ' . format_text($assessment->feedbackauthor, FORMAT_HTML) . '</div>';
