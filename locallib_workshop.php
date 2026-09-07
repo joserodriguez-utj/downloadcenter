@@ -70,6 +70,12 @@ trait local_downloadcentercustom_workshop_trait {
                 return in_array($sub->authorid, $memberids);
             });
         }
+        if ($this->portfolio_userid !== null) {
+            // Portafolio: solo evidencias del estudiante indicado.
+            $submissions = array_filter($submissions, function($sub) {
+                return (int)$sub->authorid === (int)$this->portfolio_userid;
+            });
+        }
 
         if (empty($submissions)) {
             return;

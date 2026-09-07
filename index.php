@@ -89,7 +89,11 @@ if ($data = $downloadform->get_data()) {
     $event->trigger();
 
     $downloadcenter->parse_form_data($data);
-    $hash = $downloadcenter->create_zip();
+    if ($downloadcenter->get_download_mode() === 'portafolio') {
+        $downloadcenter->create_portfolio_zip();
+    } else {
+        $hash = $downloadcenter->create_zip();
+    }
 } else if ($downloadform->is_cancelled()) {
     redirect(new moodle_url('/course/view.php', ['id' => $course->id]));
     die;

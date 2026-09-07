@@ -62,6 +62,7 @@ $string['groupfilter_help'] = 'This filter limits downloaded submissions to the 
 $string['groupfilter_help_help'] = 'Select one or more groups to download only submissions from students in those groups. Leave empty to include all groups.';
 $string['all_groups'] = 'All groups';
 $string['content_to_download'] = 'CONTENT TO DOWNLOAD';
+$string['download_mode'] = 'Download mode';
 $string['materials'] = 'Materials Available for Download';
 $string['files'] = 'Files';
 $string['folders'] = 'Folders';
@@ -79,6 +80,20 @@ $string['select_groups_one_by_one'] = 'Select groups one by one';
 $string['selectallgroups_help'] = 'Select all groups';
 $string['selectallgroups_help_help'] = 'Check this option to select all available groups.';
 $string['selectgroup_required'] = 'You must select at least one group to download tasks.';
+$string['modo_descarga'] = 'DOWNLOAD MODE';
+$string['mode_normal'] = 'Normal download';
+$string['mode_portafolio'] = 'Evidence portfolio';
+$string['seleccionar_grupo'] = 'SELECT A GROUP';
+$string['seleccionar_grupo_placeholder'] = 'Select a group…';
+$string['portfoliogroup_help'] = 'Group whose students will be included in the portfolio.';
+$string['portfoliogroup_help_help'] = 'Select the group whose students will be part of the evidence portfolio.';
+$string['todos_estudiantes'] = 'ALL STUDENTS';
+$string['todos_estudiantes_label'] = 'All students';
+$string['seleccionar_estudiantes'] = 'SELECT STUDENTS';
+$string['selectedstudents_help'] = 'Individual students to include in the portfolio.';
+$string['selectedstudents_help_help'] = 'You can choose one or more students. If you check "All students", individual selections are ignored.';
+$string['selectstudents_required'] = 'You must select at least one student (or check "All students").';
+$string['sin_grupo'] = 'NO_GROUP';
 
 //Locallib_quiz strings
 $string['quiz_grade_highest'] = 'Highest grade';
@@ -206,3 +221,5 @@ $string['data_grading_method'] = 'Grading method';
 $string['data_final_grade'] = 'Final grade';
 $string['data_no_grade'] = 'No grade';
 $string['data_rated'] = 'Record rating';
+
+// Portfolio strings.

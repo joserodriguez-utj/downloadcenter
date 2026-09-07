@@ -73,6 +73,13 @@ trait local_downloadcentercustom_quiz_trait {
             });
         }
 
+        if ($this->portfolio_userid !== null) {
+            // Portafolio: solo evidencias del estudiante indicado.
+            $users = array_filter($users, function($u) {
+                return (int)$u->id === (int)$this->portfolio_userid;
+            });
+        }
+
         if (!$users) {
             return;
         }

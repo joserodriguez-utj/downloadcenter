@@ -73,6 +73,12 @@ trait local_downloadcentercustom_database_trait {
                 return in_array($rec->userid, $memberids);
             });
         }
+        if ($this->portfolio_userid !== null) {
+            // Portafolio: solo evidencias del estudiante indicado.
+            $records = array_filter($records, function($rec) {
+                return (int)$rec->userid === (int)$this->portfolio_userid;
+            });
+        }
 
         if (empty($records)) {
             return;

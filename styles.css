@@ -118,8 +118,7 @@
 
 .path-local-downloadcentercustom #region-main .card.block .row.fitem {
     margin-left: 1rem !important;
-    margin-top: 0 !important; /* stylelint-disable-line declaration-no-important */
-    margin-bottom: 0.75rem !important; /* stylelint-disable-line declaration-no-important */
+    margin: 10px 0 !important;
 }
 
 /* delete first empty row used in hack :) */
@@ -298,4 +297,62 @@
     width: 46.57rem !important;
     max-width: none !important;
     margin-left: .98rem;
+}
+
+/* Modo de descarga: se mueve con moverOpciones() al inicio del card. */
+.path-local-downloadcentercustom #modo-selector {
+    margin-top: 0 !important;
+    margin-bottom: 18px !important;
+}
+
+.path-local-downloadcentercustom #modo-selector .downloadcenter_selector {
+    margin: 10px 0 8px !important;
+    padding-left: 14px !important;
+}
+
+.path-local-downloadcentercustom #modo-selector .downloadcenter_selector > .col-md-9 {
+    padding-left: 0 !important;
+}
+
+/* Radios de modo: una sola fila horizontal, alineados verticalmente al centro. */
+.path-local-downloadcentercustom #modo-selector .downloadcenter_selector > .col-md-9 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+}
+
+.path-local-downloadcentercustom #modo-selector .col-md-9 > .fitem {
+    display: inline-flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-width: 0 !important;
+    flex: 0 0 auto !important;
+}
+
+.path-local-downloadcentercustom #modo-selector .col-md-9 > .fitem .fitemtitle {
+    display: none !important;
+}
+
+.path-local-downloadcentercustom #modo-selector .col-md-9 .felement {
+    padding: 0 !important;
+}
+
+.path-local-downloadcentercustom #modo-selector .col-md-9 .felement input[type="radio"] {
+    margin: 0 8px 0 0 !important;
+    position: static !important;
+}
+
+.path-local-downloadcentercustom #modo-selector .col-md-9 label {
+    font-weight: normal !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap;
+    width: auto !important;
+}
+
+/* Contenido a descargar: mismo margen izquierdo que el resto de titulos. */
+.path-local-downloadcentercustom #opciones-title {
+    padding-left: 14px !important;
 }

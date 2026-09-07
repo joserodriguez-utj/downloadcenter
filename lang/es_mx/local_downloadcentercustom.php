@@ -62,6 +62,7 @@ $string['groupfilter_help'] = 'Este filtro limita las entregas descargadas a los
 $string['groupfilter_help_help'] = 'Selecciona uno o más grupos para descargar únicamente las entregas de los estudiantes de esos grupos.';
 $string['all_groups'] = 'Todos los grupos';
 $string['content_to_download'] = 'CONTENIDO A DESCARGAR';
+$string['download_mode'] = 'Modo de descarga';
 $string['materials'] = 'Materiales disponibles para descargar';
 $string['files'] = 'Archivos';
 $string['folders'] = 'Carpetas';
@@ -79,6 +80,20 @@ $string['select_groups_one_by_one'] = 'Seleccionar grupo uno por uno';
 $string['selectallgroups_help'] = 'Seleccionar todos los grupos';
 $string['selectallgroups_help_help'] = 'Selecciona esta opción para marcar todos los grupos disponibles.';
 $string['selectgroup_required'] = 'Debes seleccionar al menos un grupo para descargar tareas.';
+$string['modo_descarga'] = 'MODO DE DESCARGA';
+$string['mode_normal'] = 'Descarga normal';
+$string['mode_portafolio'] = 'Portafolio de evidencias';
+$string['seleccionar_grupo'] = 'SELECCIONAR UN GRUPO';
+$string['seleccionar_grupo_placeholder'] = 'Selecciona un grupo…';
+$string['portfoliogroup_help'] = 'Grupo cuyos estudiantes se incluirán en el portafolio.';
+$string['portfoliogroup_help_help'] = 'Selecciona el grupo cuyos estudiantes participarán en el portafolio de evidencias.';
+$string['todos_estudiantes'] = 'TODOS LOS ESTUDIANTES';
+$string['todos_estudiantes_label'] = 'Todos los estudiantes';
+$string['seleccionar_estudiantes'] = 'SELECCIONAR ESTUDIANTES';
+$string['selectedstudents_help'] = 'Estudiantes individuales a incluir en el portafolio.';
+$string['selectedstudents_help_help'] = 'Puedes elegir uno o varios estudiantes. Si marcas "Todos los estudiantes", se ignoran las selecciones individuales.';
+$string['selectstudents_required'] = 'Debes seleccionar al menos un estudiante (o marcar "Todos los estudiantes").';
+$string['sin_grupo'] = 'SIN_GRUPO';
 
 //Locallib_quiz strings
 $string['quiz_grade_highest'] = 'Calificación más alta';
@@ -207,3 +222,5 @@ $string['data_grading_method'] = 'Método de calificación';
 $string['data_final_grade'] = 'Calificación final';
 $string['data_no_grade'] = 'Sin calificación';
 $string['data_rated'] = 'Calificación de registros';
+
+// Download mode strings.

@@ -138,6 +138,12 @@ trait local_downloadcentercustom_assign_trait {
                 return $sub->userid != 0 && in_array($sub->userid, $memberids);
             });
         }
+        if ($this->portfolio_userid !== null) {
+            // Portafolio: solo evidencias (entregas individuales) del estudiante indicado.
+            $submissions = array_filter($submissions, function($sub) {
+                return (int)$sub->userid === (int)$this->portfolio_userid;
+            });
+        }
         $evidenciadir = $resdir . '/Evidencias';
         $filelist[$evidenciadir] = null;
         $soloevidencias = $onlytasks && !$includefeedback && !$includeinstructions && !$includeresources;

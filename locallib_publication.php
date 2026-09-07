@@ -119,6 +119,11 @@ trait local_downloadcentercustom_publication_trait {
             }
         }
 
+        if ($this->portfolio_userid !== null && !empty($users)) {
+            // Portafolio: solo evidencias del estudiante indicado.
+            $users = array_intersect($users, [(int)$this->portfolio_userid]);
+        }
+
         $userfields = [];
         foreach (\core_user\fields::get_name_fields() as $field) {
             $userfields[$field] = $field;
